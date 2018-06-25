@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+<title>Team Ashen</title>
+	<style type="text/css">
+	
+		body {font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; 
+			font-size: 15px; 
+			line-height: 1.5;
+			padding: 0; 
+			margin: 0; 
+			background-color: lightgray; 
+		}
+		
+		.container {width: 80%;
+			margin: auto; 
+			overflow: hidden;
+		}
+	
+		header{background-color:#354241;
+			color: #ffffff;
+			padding-top: 30px;
+			border-bottom: #e8491d solid;
+			min-height: 70px;
+		}
+	
+		header a {color:#ffffff;
+			 	text-decoration: none;
+		text-transform:uppercase;
+		font-size: 16px;
+			
+		}
+		
+		header a:hover {color: darkgoldenrod;
+		font-weight: bold;
+		}
+	
+		header ul{margin: 0;
+		padding: 0;
+		}
+		
+		header li{float: left;
+		padding: 0 20px 0 20px;
+		display: inline;
+			margin-top: -10px;
+		}
+		
+		
+		
+		header nav {float: right;
+		margin-bottom: 20px;
+			margin-top: -20px;
+		} 
+	
+		.ashen {color: #e8491d; }
+	
+		.current a {color: #e8491d;}
+		
+		#showcase {min-height: 600px; background: url(Images/overwatch.jpg) 0 -150px repeat-x; background-size: cover; text-align: center; font-weight: bold; font-size: 20px; color: snow;animation: animate-background linear 12s infinite; overflow: hidden;}
+		
+		@keyframes animate-background { from  }
+		
+		#showcase h1{margin-top: 70px;font-size: 40px;margin-bottom: 20px;}
+		
+		.dream {margin-top: 20px; text-align: center; align-content: center; align-items: center; font-weight: bold;}
+		
+		#newsletter {padding: 25px; color: white; background-color: #354241; border-bottom: 1.5px solid #e8491d; font-size: 25px;}
+		
+		.button { height: 38px; background-color: #e8491d; color: white; border: solid black;padding-left: 20px;padding-right: 20px; cursor: pointer;}
+		
+		form{float: right;0 -50px;color: white;}
+		
+		 .input {padding: 4px; height: 25px; width: 300px;color:#e8491d; font-weight: bold;}
+		
+.flip3D{ width:30%; height:200px; margin:10px; float:left; padding: 10px;} 
+
+.flip3D > .front1{ position:absolute; -webkit-transform: perspective( 600px ) rotateY( 0deg ); transform: perspective( 600px ) rotateY( 0deg ); background:#FC0; width:240px; height:200px; border-radius: 7px; -webkit-backface-visibility: hidden; backface-visibility: hidden; transition: -webkit-transform .5s linear 0s; transition: transform .5s linear 0s; } 
+
+.flip3D > .back1{ position:absolute; -webkit-transform: perspective( 600px ) rotateY( 180deg ); transform: perspective( 600px ) rotateY( 180deg ); background: #80BFFF; width:240px; height:200px; border-radius: 7px; -webkit-backface-visibility: hidden; backface-visibility: hidden; transition: -webkit-transform .5s linear 0s; transition: transform .5s linear 0s; } 
+
+.flip3D:hover > .front1{ -webkit-transform: perspective( 600px ) rotateY( -180deg ); transform: perspective( 600px ) rotateY( -180deg ); } 
+
+.flip3D:hover > .back1{ -webkit-transform: perspective( 600px ) rotateY( 0deg ); 
+transform: perspective( 600px ) rotateY( 0deg ); } 
+		
+		
+.flip3D > .front2{ position:absolute; -webkit-transform: perspective( 600px ) rotateY( 0deg ); transform: perspective( 600px ) rotateY( 0deg ); background:#FC0; width:240px; height:200px; border-radius: 7px; -webkit-backface-visibility: hidden; backface-visibility: hidden; transition: -webkit-transform .5s linear 0s; transition: transform .5s linear 0s; } 
+
+.flip3D > .back2{ position:absolute; -webkit-transform: perspective( 600px ) rotateY( 180deg ); transform: perspective( 600px ) rotateY( 180deg ); background: #80BFFF; width:240px; height:200px; border-radius: 7px; -webkit-backface-visibility: hidden; backface-visibility: hidden; transition: -webkit-transform .5s linear 0s; transition: transform .5s linear 0s; } 
+
+.flip3D:hover > .front2{ -webkit-transform: perspective( 600px ) rotateY( -180deg ); transform: perspective( 600px ) rotateY( -180deg ); } 
+
+.flip3D:hover > .back2{ -webkit-transform: perspective( 600px ) rotateY( 0deg ); 
+transform: perspective( 600px ) rotateY( 0deg ); } 
+		
+		
+.flip3D > .front3{ position:absolute; -webkit-transform: perspective( 600px ) rotateY( 0deg ); transform: perspective( 600px ) rotateY( 0deg ); background:#FC0; width:240px; height:200px; border-radius: 7px; -webkit-backface-visibility: hidden; backface-visibility: hidden; transition: -webkit-transform .5s linear 0s; transition: transform .5s linear 0s; } 
+
+.flip3D > .back3{ position:absolute; -webkit-transform: perspective( 600px ) rotateY( 180deg ); transform: perspective( 600px ) rotateY( 180deg ); background: #80BFFF; width:240px; height:200px; border-radius: 7px; -webkit-backface-visibility: hidden; backface-visibility: hidden; transition: -webkit-transform .5s linear 0s; transition: transform .5s linear 0s; } 
+
+.flip3D:hover > .front3{ -webkit-transform: perspective( 600px ) rotateY( -180deg ); transform: perspective( 600px ) rotateY( -180deg ); } 
+
+.flip3D:hover > .back3{ -webkit-transform: perspective( 600px ) rotateY( 0deg ); 
+transform: perspective( 600px ) rotateY( 0deg ); } 
+		
+		.heros{text-align: center; font-weight: bold; font-size: 25px; text-transform: uppercase; color:#e8491d;}
+		
+		#boxes{margin-top: 20px;}
+		
+		.flip3D > .front1 {background: url(./Images/genji.jpg) no-repeat; background-size: cover; color: #e8491d; text-align: center;}
+		.flip3D > .back1 {background: url(./Images/hanzo.jpg) no-repeat 0 -80px; background-size: cover; color: #e8491d; text-align: center;}
+		.flip3D > .front2 {background: url(./Images/reinhardt.jpg) no-repeat 0 -29px; background-size: cover; color: #e8491d; text-align: center;}
+		.flip3D > .back2 {background: url(Images/zarya.jpg) no-repeat 0 -10px; background-size: cover; color: #e8491d; text-align: center;}
+		.flip3D > .front3 {background: url(Images/mercy.jpg) no-repeat -20px; background-size: cover; color: #e8491d; text-align: center;}
+		.flip3D > .back3 {background: url(./Images/zenyatta.jpg) no-repeat -36px -30px;background-size: cover; color: #e8491d; text-align: center;}
+	
+		
+		
+		footer {text-align: center;color: black;background-color: #e8491d; font-weight: bold; font-size: 15px; float: center;padding: 5px;}
+		
+	</style>
+</head>
+
+<body>
+	<header>
+	 <div class="container">
+	<div id="team">
+		<h1><span class="ashen">Ashen</span> Esports Gaming</h1>
+		 </div>
+		  <nav>
+			<ul>
+				 <li class="current"><a href="Acme.html">Home</a></li>
+				<li><a href="About.html">Players</a></li>
+				<li><a href="Services.html">Support Us</a></li>
+			</ul> 
+		  </nav>
+	 </div>
+	</header>
+<section id="showcase">
+	  <div class="container">
+		 <h1>&nbsp; </h1>
+		 <h1>Start with a dream and climb to become the winning team </h1>
+		  <p class="dream"> Team Ashen was developed by a team of friends who wanted to improve and climb as a team to new heights.They knew that competition and teamwork was the way to improve.</p>
+	  </div>
+	 </section>
+	 
+	 <section id="newsletter">
+	  <div class="container"
+		   <h1> Get News about all our Live Games</h1>
+	 	<form>
+	 		<input type="email" placeholder="Enter Email..." class="input">
+		 <input type="button" value="Submit" name="" class="button" onMouseOver="this.style.backgroundColor='darkgray'" onMouseOut="this.style.backgroundColor='#e8491d'" />
+	 	</form>
+	 </section>
+	
+	 <section id="boxes">
+<div class="container">
+	<h1 class="heros"> Our favorite Heros</h1>
+	 <div class="flip3D"> 
+		 <div class="back1">Hanzo <br></br> He is a mercenary archer who is on the path of redemption to restore his honor and atone for the atrocity he once committed as the heir of a syndicate.</div> 
+		 <div class="front1">Genji <br></br>Genji is an offense hero in Overwatch. He is a cyborg ninja who has freed himself from his criminal past and the war with his cybernetic body.
+</div>
+		 
+</div> 
+<div class="flip3D"> 
+	<div class="back2">Zarya<br></br>Deploying powerful barriers that convert damage into energy for her Particle Cannon, Zarya is an invaluable asset on the front lines of any battle.</div> 
+	<div class="front2">Reinhardt <br></br> Clad in powered armor and swinging his hammer, Reinhardt leads a rocket-propelled charge across the battleground and defends his squadmates. </div> 
+</div> 
+<div class="flip3D"> 
+	<div class="back3">Zenyatta<br></br>Zenyatta calls upon orbs of harmony and discord to heal his teammates and weaken his opponents, while being in a state of immunity</div> 
+	<div class="front3">Mercy<br></br>Mercy’s Valkyrie Suit helps keep her close to teammates like a guardian angel; healing, resurrecting or strengthening them</div>
+ </div> 
+	</div>
+</section>
+	 <footer>
+	<p>Ashen Esports Gaming, Copyright &copy; 2018</p>
+	</footer>
+	 
+ </body>
+</html>
